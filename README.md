@@ -66,8 +66,9 @@ is a Python program using Robofab.
 Glyphs font editor.
 
 [iKern](http://ikern.com/k1/) by Igino Marini is a software service;
-the algorithms at the heart of the method employed have not been
-disclosed.
+Marini [describes](http://ikern.com/k1/ikern/the-ikern-theory/) the
+theory behind his approach, but the specific algorithms at the heart
+of the method employed have not been published.
 
 [KernMaster](http://www.fontmaster.nl/) is a component of the
 FontMaster application suite, published by Dutch Type Library.
