@@ -1,5 +1,5 @@
 kernall: Kerning and letterspacing research
--------------------------------------------
+===========================================
 
 This repository hosts material that I am collecting about various
 approaches to the automation of letterspacing and kerning.
@@ -12,7 +12,7 @@ please do feel free to drop an angry pull request that adds it or to
 express your outrage at my shortsightedness through different means.
 
 Spacing
-=======
+-------
 
 Classic heuristics have been described by a number of authors,
 including [Walter Tracy and Adrian Frutiger]
@@ -56,7 +56,7 @@ as it did not produce results as satisfactory as the other methods.
 It is mentioned here for the sake of completeness.
 
 Kerning
-=======
+-------
 
 [Typefacet
 Autokern](http://charlesmchen.github.io/typefacet/topics/autokern/index.html)
@@ -75,7 +75,7 @@ FontMaster application suite, published by Dutch Type Library.
 
 
 Ancillary utilities
-===================
+-------------------
 
 [LightMeter](https://github.com/LettError/LightMeter) is a RoboFont
 utility that calculates the "grayness" percentage of a glyph or any
