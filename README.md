@@ -17,16 +17,16 @@ Spacing
 Classical heuristics have been described by a number of authors,
 including Walter Tracy and Adrian Frutiger.
 
-The [Tracy method](tracy.md) defines a small set of spacing values---in
-a fixed ratio to each other---to be assigned as the left and right
+The [Tracy method](tracy.md) defines a small set of spacing values --- in
+a fixed ratio to each other --- to be assigned as the left and right
 sidebearings for most of the Latin upper-case and lower-case letters.
-The base value from which the other spacign values are derived is
+The base value from which the other spacing values are derived is
 taken from the distance between the stems of n and H, so in a small
 sense it can be said to "automate" spacing decisions.
 
 However, Tracy's approach leaves out several glyphs, which he says
 "must be spaced visually," and it is limited solely to the basic Latin
-glyph set, as well as assuming an upright Roman form with serifs and
+alphabet, as well as assuming an upright Roman form with serifs and
 traditonal dimensions.
 
 The [Frutiger approach](frutiger.md), as expressed informally in [his
@@ -41,7 +41,7 @@ Tracy's approach was [used](http://web.archive.org/web/20081008042010/http://www
 spacing functionality later found in several Adobe applications.
 
 The [wedge method](kindersley.md), developed by David Kindersley, sought to find the
-"optical center" of each glyph---that is, horizontal point at which a
+"optical center" of each glyph --- that is, horizontal point at which a
 vertical line drawn through the glyph produces an equal "gray ratio"
 (that is, percentage of black) on each side.  Kindersley determined
 that this method produced acceptable results only if the gray
