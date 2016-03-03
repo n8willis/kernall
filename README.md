@@ -14,20 +14,41 @@ express your outrage at my shortsightedness through different means.
 Spacing
 -------
 
-Classic heuristics have been described by a number of authors,
-including [Walter Tracy and Adrian Frutiger]
-(http://web.archive.org/web/20081008042010/http://www.linotype.com/793-12659/walterkaechs.html).
-Tracy's approach was used by Hermann Zapf to develop the automatic
+Classical heuristics have been described by a number of authors,
+including Walter Tracy and Adrian Frutiger.
+
+The [Tracy method](tracy.md) defines a small set of spacing values---in
+a fixed ratio to each other---to be assigned as the left and right
+sidebearings for most of the Latin upper-case and lower-case letters.
+The base value from which the other spacign values are derived is
+taken from the distance between the stems of n and H, so in a small
+sense it can be said to "automate" spacing decisions.
+
+However, Tracy's approach leaves out several glyphs, which he says
+"must be spaced visually," and it is limited solely to the basic Latin
+glyph set, as well as assuming an upright Roman form with serifs and
+traditonal dimensions.
+
+The [Frutiger approach](frutiger.md), as expressed informally in [his
+comments](http://www.linotype.com/793-12659/walterkaechs.html) about
+Walter Käch, says simply that "the interior spaces (counters) of the
+lower-case letters had the identical width of the spaces between the
+letters."  Frutiger noted that he had designed all of his serif typefaces
+according to this rule.
+
+
+Tracy's approach was [used](http://web.archive.org/web/20081008042010/http://www.typophile.com/node/31468) by Hermann Zapf to develop the automatic
 spacing functionality later found in several Adobe applications.
 
-The Wedge Method, developed by David Kindersley, sought to find the
-"optical center" of each glyph --- that is, the point on the
-horizontal axis at which the two sides of the glyph produced an equal
-amount of gray.  Kindersley determined that this method produced
-acceptable results only if the gray measurements were taken with the
-center of the glyph masked off; the opacity and degree to which the
-center of a glyph should be masked off for optimal results was the
-focus of the research.
+The [wedge method](kindersley.md), developed by David Kindersley, sought to find the
+"optical center" of each glyph---that is, horizontal point at which a
+vertical line drawn through the glyph produces an equal "gray ratio"
+(that is, percentage of black) on each side.  Kindersley determined
+that this method produced acceptable results only if the gray
+measurements were taken with the center of the glyph masked off; the
+opacity and degree to which the center of a glyph should be masked off
+for optimal results was the focus of the research.  He experimentally
+tested this method with a variety of typefaces, including uprights and Italics.
 
 [LetterModel](http://www.lettermodel.org/) is an approach to
 letterspacing developed by Frank E. Blokland, and based on the notion
@@ -36,7 +57,7 @@ respect to letter size) regular grid system.
 
 AutoSpace by Andres Torresi of Huerta Tipográfica is an add-on for the
 Glyphs font editor.  It has been demonstrated in several widely
-shared online videoes, but has not yet been formally released.
+shared online videos, but has not yet been formally released.
 
 [Spacing Macro](http://www.impallari.com/projects/overview/spacing-macro) by Pablo
 Impallari is a macro for FontLab.  It is based on discussions
