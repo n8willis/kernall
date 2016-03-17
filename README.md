@@ -50,7 +50,7 @@ opacity and degree to which the center of a glyph should be masked off
 for optimal results was the focus of the research.  He experimentally
 tested this method with a variety of typefaces, including uprights and Italics.
 
-[LetterModel](http://www.lettermodel.org/) is an approach to
+[LetterModel](lettermodel.md) is an approach to
 letterspacing developed by Frank E. Blokland, and based on the notion
 that early miniscules were drawn on a (relatively large-scale, with
 respect to letter size) regular grid system.
