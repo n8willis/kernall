@@ -8,7 +8,7 @@ his doctoral research into historic type design and manufacturing.
 Part of Blokland's central thesis is that Rennaissance punches were
 cut in alignment with a "cadence" grid system; between any two particular
 typefaces, the number of units in the grid might vary, but, within a
-single face, stems, counters, extenders, and sidebearings were aligned
+single face, stems, counters, extenders, and side bearings were aligned
 to grid coordinates.
 
 At his research blog, Blokland [describes]
@@ -34,7 +34,7 @@ period and comma.
 
 Below is the resulting "cadence" table.  Here, `x` indicates that the
 bearing measurement is taken from the x-axis extremum, while `s`
-indicates that the bearing is measured from the side of the glyph's
+indicates that the bearing is measured from the outer edge of the glyph's
 stem:
 
 | lb |glyph| rb |   | lb |glyph| rb |
@@ -120,29 +120,29 @@ the following relative (to "n") set of bearings:
 |----|-----|----|---|----|-----|----|
 | 0.333x |  A  | 0.333x |   | 0.333x |  a  | 1.0s |
 | 1.500s |  B  | 0.667x |   | 0.833s |  b  | 0.333x |
-| 0.667x |  C  | 0.5x |   | 0.333x |  c  | 1x |
+| 0.667x |  C  | 0.5x |   | 0.333x |  c  | 0.167x |
 | 1.500s |  D  | 0.667x |   | 0.333x |  d  | 1.0s |
-| 1.500s |  E  | 0.5x |   | 0.333x |  e  | 1x |
-| 1.500s |  F  | 0.5x |   | 1.0s |  f  | 1x |
-| 0.667x |  G  | 1.167s |   | 0.333x |  g  | 1x |
+| 1.500s |  E  | 0.5x |   | 0.333x |  e  | 0.167x |
+| 1.500s |  F  | 0.5x |   | 1.0s |  f  | 0.167x |
+| 0.667x |  G  | 1.167s |   | 0.333x |  g  | 0.167x |
 | 1.500s |  H  | 1.500s |   | 1.0s |  h  | 1.0s |
 | 1.500s |  I  | 1.500s |   | 1.0s |  i  | 1.0s |
 | 1.167s |  J  | 1.167s |   | 1.0s |  j  | 0.833s |
-| 1.500s |  K  | 0.333x |   | 1.0s |  k  | 1x |
+| 1.500s |  K  | 0.333x |   | 1.0s |  k  | 0.167x |
 | 1.500s |  L  | 0.5x |   | 1.0s |  l  | 1.0s |
 | 1.500s |  M  | 1.500s |   | 1.0s |  m  | 1.0s |
 | 1.500s |  N  | 1.500s |   | 1.0s |  n  | 1.0s |
 | 0.667x |  O  | 0.667x |   | 0.333x |  o  | 0.333x |
 | 1.500s |  P  | 0.5x |   | 1.0s |  p  | 0.333x |
 | 0.667x |  Q  | 0.667x |   | 0.333x |  q  | 0.833s |
-| 1.500s |  R  | 0.333x |   | 1.0s |  r  | 1x |
+| 1.500s |  R  | 0.333x |   | 1.0s |  r  | 0.167x |
 | 0.667x |  S  | 0.667x |   | 0.5x |  s  | 0.5x |
-| 0.333x |  T  | 0.333x |   | 0.833x |  t  | 1x |
+| 0.333x |  T  | 0.333x |   | 0.833x |  t  | 0.167x |
 | 1.167s |  U  | 1.167s |   | 0.833s |  u  | 0.833s |
-| 0.333x |  V  | 0.333x |   | 1x |  v  | 1x |
-| 0.333x |  W  | 0.333x |   | 1x |  w  | 1x |
-| 0.333x |  X  | 0.333x |   | 1x |  x  | 1x |
-| 0.333x |  Y  | 0.333x |   | 1x |  y  | 1x |
+| 0.333x |  V  | 0.333x |   | 0.167x |  v  | 0.167x |
+| 0.333x |  W  | 0.333x |   | 0.167x |  w  | 0.167x |
+| 0.333x |  X  | 0.333x |   | 0.167x |  x  | 0.167x |
+| 0.333x |  Y  | 0.333x |   | 0.167x |  y  | 0.167x |
 | 0.5x |  Z  | 0.5x |   | 0.333x |  z  | 0.333x |
 | 0.5x |  .  | 0.5x |   | 0.5x |  ,  | 0.5x |
 
