@@ -8,7 +8,7 @@ his doctoral research into historic type design and manufacturing.
 Part of Blokland's central thesis is that Rennaissance punches were
 cut in alignment with a "cadence" grid system; between any two particular
 typefaces, the number of units in the grid might vary, but, within a
-single face, stems, counters, extenders, and side bearings were aligned
+single face, stems, counters, extenders, and sidebearings were aligned
 to grid coordinates.
 
 At his research blog, Blokland [describes]
@@ -22,13 +22,13 @@ grid should be superimposed on the "n" glyph, with the number of units
 adjusted so that both stems are aligned on veritcal grid
 lines.
 
-Second, the side bearings are set so that each bearing is half
-the width of the counter inside the "n." From there, the side bearing
+Second, the sidebearings are set so that each bearing is half
+the width of the counter inside the "n." From there, the sidebearings
 for the other glyphs can be computed algebraically.
 
 For his example,
 Blokland applies a 36-unit grid over a normally-proportioned Roman
-face, and provides a chart listing the left- and right-sidebearings
+face, and provides a chart listing the left and right sidebearings
 for the full uppercase and lowercase basic Latin alphabet, plus the
 period and comma.
 
@@ -69,13 +69,13 @@ stem:
 
 The original table contains an oddity for "d", saying "left and right
 from x-axis extreme, right from stem."  Presumably the conflicting
-statements about the right bearing are a mere
+statements about the right sidebearing are a mere
 clerical error; the intent is surely to measure from the stem.
 
 The footer to the table also notes "the only area which counts, is
 within the x-height / the capital spaces are lc + 1."  The surrounding
 text does not go into detail on this point; the simplest explanation
-is that one should increment each side bearing on the capitals by one
+is that one should increment each sidebearing on the capitals by one
 grid unit:
 
 | lb |glyph| rb |   | lb |glyph| rb |
@@ -111,7 +111,7 @@ grid unit:
 Normalization
 -------------
 
-The example resulted in left- and right-sidebearings
+The example discussed on the linked page resulted in left and right sidebearings
 of 6 for the "n." Naturally, the relative proportions of all the
 remaining bearings can be computed from that.  Doing so would produce
 the following relative (to "n") set of bearings:
@@ -168,7 +168,7 @@ Tracy and Frutiger's approaches into a single method.
 
 There are some unique properties of the method in comparison with
 other systems.  For instance, the cadence tables produce their minimal
-right-side bearings on A, K, R, T, W, X, and Y, but not on L.  It is
+right sidebearings on A, K, R, T, W, X, and Y, but not on L.  It is
 also interesting that the bearings of the capitals are incremented by
 a fixed amount, rather than scaled.
 
@@ -182,11 +182,14 @@ forms.
 
 This is noticeable in a few key spots:
 
-* The right-side bearing for g is measured from the
+* The right sidebearing for g is measured from the
 extremum, rather than from the stem. This works for the two-story g,
-but it inappropriate for the one-story g.
-* The right-side bearing for G is measured from the stem.  This
+but is inappropriate for the one-story g.
+* The right sidebearing for G is measured from the stem.  This
 assumes that G has a more-or-less straight spur.
 * The bearings of the capitals are incremented by a fixed amount, which
 suggests that assumptions are made about the relative stroke size and
 widths of the capitals with respect to the lower-case glyphs.
+
+Further afield, the LetterModel method, like Tracy and Frutiger,
+applies only to upright Roman forms, not to italics.
