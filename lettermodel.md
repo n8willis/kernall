@@ -164,7 +164,10 @@ Interestingly enough, the automatic
 bearings chosen by the cadence method are derived from half the width
 of the "n", which is identical to the sidebearings prescribed by
 Frutiger's approach.  Thus, the cadence method essentially combines
-Tracy and Frutiger's approaches into a single method. 
+Tracy and Frutiger's approaches into a single method.  (Strictly
+speaking, Tracy suggested starting with half the wdth of the counter
+of n, but the next step in his approach assumed some alterations would
+be made.)
 
 There are some unique properties of the method in comparison with
 other systems.  For instance, the cadence tables produce their minimal
