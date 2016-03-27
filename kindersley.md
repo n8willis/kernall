@@ -56,9 +56,7 @@ center of mass.
 The "second moment" seems to correspond to the planar second moment of
 area with respect to the y axis.
 
-`I_y = \int_Q\int y^2dxdy`
-<script type="text/javascript"
-src="http://www.hostmath.com/Math/MathJax.js?config=OK"></script>
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <mstyle displaystyle="true"> <msub> <mi>I</mi> <mi>y</mi> </msub> <mo>=</mo> <msub> <mo>&#x222B;</mo> <mi>Q</mi> </msub> <mo>&#x222B;</mo> <msup> <mi>y</mi> <mn>2</mn> </msup> <mrow> <mi>d</mi> <mi>x</mi> </mrow> <mrow> <mi>d</mi> <mi>y</mi> </mrow> </mstyle> </math>
 
 
 Following this progression, the "third moment" seems to be the
