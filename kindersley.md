@@ -9,8 +9,8 @@ This work was a rare foray into trying to experimentally determine
 what underlying factors might be at work when designers visually
 adjust spacing for perceptual balance.
 
-The Kindersley Workshop has (an
-overview)[http://www.kindersleyworkshop.co.uk/spacing/] of the process
+The Kindersley Workshop has [an
+overview](http://www.kindersleyworkshop.co.uk/spacing/) of the process
 documented at its web site; a far more thorough discussion is found in
 Kindersley's book, <cite>Optical letter spacing for new printing
 systems</cite>, 1966, 1976 (reprinted 2001).
@@ -81,17 +81,95 @@ distance to the y-axis.
 
 <math xmlns="http://www.w3.org/1998/Math/MathML"> <mstyle displaystyle="true"> <msub> <mi>I</mi> <mi>y</mi> </msub> <mo>=</mo> <msub> <mo>&#x222B;</mo> <mi>Q</mi> </msub> <mo>&#x222B;</mo> <msup> <mi>y</mi> <mn>3</mn> </msup> <mrow> <mi>d</mi> <mi>x</mi> </mrow> <mrow> <mi>d</mi> <mi>y</mi> </mrow> </mstyle> </math>
 
+
 Kindersley initially suspected that the optical center of a glyph
 would be not on the axis through its center of mass, but through its
-third moment center.
+third moment center.  To test this theory, he constructed the
+experimental apparatus described above.  Two photocells measured the
+amount of light that fell on each side of a line dividing a glyph; the
+division point could be adjusted until the two halves produced equal
+measurements.
+
+It is not clear from the book what the light source(s) were nor how
+they were arranged; light falloff could, in theory, have affected the
+measurements; computing the same quantities mathematically is
+simpler in this respect.
+
+Following the initial test runs, he adapted the mechanism to mask off
+a portion of each glyphs' center.  The masks were made of an opaque
+material perforated with holes in a gradient beginning at the center.
 
 
+This has the effect of applying a weight function in x to the area on
+each side of the dividing line.  Several gradient functions were
+tested, it seems: at least linear, quadratic, and cubic.  The
+gradients were uniform in the y direction; Kindersley did speculate
+that using two-dimensional gradient shapes (parabolas,
+specifically), but it does not seem that he tested such gradients in practice.
+
+Importantly, multiplying the linear, quadratic, and cubic weight
+functions by the differential area inside the region measured gives
+the equivalent of the geometric mean, planar second moment, and the
+third moment.
 
 
 Kindersley's observations
 -------------------------
 
-He noted that ascenders and descenders do not seem to contribute to the
+Kindersley reported that using the quadratic gradient masks produced results
+"close" to what was expected.  He also made several other observations
+along the way.
+
+First, he noted that ascenders and descenders do not seem to contribute to the
 location of the optical center (i.e., h and n have the same center, as
 do v and y).  Instead, the optical centering happens within the
 x-height rectangle. 
+
+Second, he tested italic and slanted typefaces using the same method
+as uprights, and determined that the gradient mask needed to be tilted
+at the same angle as the italic in order to produce satisfactory
+results.
+
+
+Implementation talk
+-------------------
+
+The "equal area" axis is difficult to find for a generic shape, since
+the [geometric
+median](https://en.wikipedia.org/wiki/Geometric_median), unlike the
+[geometric mean](https://en.wikipedia.org/wiki/Centroid), has no
+simple formula.
+
+For simple, closed Bezier curves, however, [Green's
+theorem](https://en.wikipedia.org/wiki/Green's_theorem) provides a
+practical solution.  One can compute the line integral of the
+Beziers that make up a glyph (or, for the purposes of the experiment,
+for each half of a glyph cut vertically in two) and find the area.
+
+Moreover, Green's theorem allows one to compute the geometric mean,
+planar second moment, and even third moment in the same manner, so
+the effects of applying the weight functions or gradient masks is
+easily computable as well.
+
+A software implementation of Kindersley's experiments could easily
+truncate glyphs at the baseline and x-height to emulate the findings
+about extenders having no discernible impact on optical centering.  In
+addition, a simple rotation of italic or oblique glyphs would suffice
+to reproduce the slanted gradients.
+
+It would be interesting to apply Kindersley's speculation about
+two-dimensional gradients using this method, which Kindersley and his
+colleagues never put to the test with practical experiments.
+
+It would also be interesting to try and reproduce Kindersley's
+original results symbolically or computationally.  As noted earlier,
+it is unclear if the physical test apparatus used took light falloff
+into account; if it did not, then perhaps that contributed some
+portion to the divergent results found testing the quadratic gradient masks.
+
+Kindersley's foray into optical spacing by these means seems to have
+come to a halt in the 1970s, at the dawn of the personal computing
+era.  More could surely be done with the computing resources available today.
+
+
+
