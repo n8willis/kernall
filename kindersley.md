@@ -49,7 +49,7 @@ position between its neighbours."
 
 He knew from practical experience that the midpoint between
 a glyph's two extrema was not the location of the optical axis.  He
-looked at four other axes, which he described as:
+looked at four other axes, which he listed as:
 
 1. area
 2. first moment (gravity)
@@ -59,15 +59,16 @@ looked at four other axes, which he described as:
 Kindersley's terminology is, at times, problematic, due to the fact
 that several different geometrical and statistical properties are
 sometimes referred to, informally, in similar-sounding terms.  It is not
-always obvious which property Kindersley is describing.
+always obvious which property Kindersley is describing.  However, by
+examining the test design, it is clear what was being testing.
 
 The "area" axis seems to
 correspond to the x-axis location of the geometric median&mdash;the line
-that divides the glyph into two sets of equal area.
+that divides the glyph into two parts of equal area.
 
 The "first moment" seems to correspond to the geometric mean or
 centroid, which (for solids of uniform density) corresponds to the
-center of mass.  
+center of mass or center of gravity.  
 
 The "second moment" seems to correspond to the planar second moment of
 area with respect to the y axis.
@@ -97,14 +98,15 @@ simpler in this respect.
 
 Following the initial test runs, he adapted the mechanism to mask off
 a portion of each glyphs' center.  The masks (or "wedges") were made
-of an opaque material perforated with holes in a gradient beginning at
-the center. 
+of an opaque material perforated with holes in a gradient pattern,
+beginning with 100% opacity at the center and transitioning to 100%
+translucent at the extrema. 
 
 This has the effect of applying a weight function in x to the area on
 each side of the dividing line.  Several gradient functions were
 tested, it seems: at least linear, quadratic, and cubic.  The
 gradients were uniform in the y direction; Kindersley did speculate
-that using two-dimensional gradient shapes (parabolas,
+about using two-dimensional gradient shapes (parabolas,
 specifically), but it does not seem that he tested such gradients in practice.
 
 The rationale for the gradients described in the book is
