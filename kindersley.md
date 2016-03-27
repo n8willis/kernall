@@ -1,7 +1,7 @@
 David Kindersley's spacing methods
 ==================================
 
-In the 1950s, Kindersley began researching methods to find the
+In the 1950s, Kindersley began (researching)[http://www.kindersleyworkshop.co.uk/spacing/] methods to find the
 "optical center" of glyphs&mdash;in other words, the point at which
 the left and right sides of the glyph "appear" balanced to the eye.
 
@@ -27,3 +27,60 @@ glyph should be masked off for optimal results was the focus of the
 research.  He experimentally tested this method with a variety of
 typefaces, including uprights and Italics.
 
+
+Balance theory
+--------------
+
+Kindersley knew from practical experience that the midpoint between
+a glyph's two extrema was not the location of the optical axis.  He
+looked at four other axes, which he described as:
+
+1. area
+2. first moment (gravity)
+3. second moment (inertia)
+4. third moment (optical?)
+
+Kindersley's terminology is, at times, problematic, due to the fact
+that several different geometrical and statistical properties are
+sometimes referred to, informally, in similar-sounding terms.  It is not
+always obvious which property Kindersley is describing.
+
+The "area" axis seems to
+correspond to the x-axis location of the geometric median&mdash;the line
+that divides the glyph into two sets of equal area.
+
+The "first moment" seems to correspond to the geometric mean or
+centroid, which (for solids of uniform density) corresponds to the
+center of mass.  
+
+The "second moment" seems to correspond to the planar second moment of
+area with respect to the y axis.
+
+`I_y = \int_Q\int y^2dxdy`
+<script type="text/javascript"
+src="http://www.hostmath.com/Math/MathJax.js?config=OK"></script>
+
+
+Following this progression, the "third moment" seems to be the
+integral of the differential area multiplied by the cube of the
+distance to the y-axis.
+
+
+
+initially suspected that the optical center of a glyph
+would be not on the axis through its center of mass, but through its
+third moment center.
+
+
+
+"Quite simply I mean that each letter should appear to be exactly in
+the centre between its two neighbours. To me this is the only
+criterion, and I do not believe that it requires any further
+justification. Put another way, any letter should occupy a passive
+position between its neighbours"
+
+
+He noted that ascenders and descenders do not seem to contribute to the
+location of the optical center (i.e., h and n have the same center, as
+do v and y).  Instead, the optical centering happens within the
+x-height rectangle. 
