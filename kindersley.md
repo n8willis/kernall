@@ -1,13 +1,19 @@
 David Kindersley's spacing methods
 ==================================
 
-In the 1950s, Kindersley began (researching)[http://www.kindersleyworkshop.co.uk/spacing/] methods to find the
+In the 1950s, Kindersley began researching methods to find the
 "optical center" of glyphs&mdash;in other words, the point at which
 the left and right sides of the glyph "appear" balanced to the eye.
 
 This work was a rare foray into trying to experimentally determine
 what underlying factors might be at work when designers visually
 adjust spacing for perceptual balance.
+
+The Kindersley Workshop has (an
+overview)[http://www.kindersleyworkshop.co.uk/spacing/] of the process
+documented at its web site; a far more thorough discussion is found in
+Kindersley's book, <cite>Optical letter spacing for new printing
+systems</cite>, 1966, 1976 (reprinted 2001).
 
 Kindersley's initial approach was to project light through cut outs of
 glyphs, and measure the actual amount of light that fell on each side
@@ -31,7 +37,17 @@ typefaces, including uprights and Italics.
 Balance theory
 --------------
 
-Kindersley knew from practical experience that the midpoint between
+Kindersley began by describing the underlying goal of optical spacing:
+
+<blockquote>
+"Quite simply I mean that each letter should appear to be exactly in
+the centre between its two neighbours. To me this is the only
+criterion, and I do not believe that it requires any further
+justification. Put another way, any letter should occupy a passive
+position between its neighbours."
+</blockquote>
+
+He knew from practical experience that the midpoint between
 a glyph's two extrema was not the location of the optical axis.  He
 looked at four other axes, which he described as:
 
@@ -63,20 +79,17 @@ Following this progression, the "third moment" seems to be the
 integral of the differential area multiplied by the cube of the
 distance to the y-axis.
 
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <mstyle displaystyle="true"> <msub> <mi>I</mi> <mi>y</mi> </msub> <mo>=</mo> <msub> <mo>&#x222B;</mo> <mi>Q</mi> </msub> <mo>&#x222B;</mo> <msup> <mi>y</mi> <mn>3</mn> </msup> <mrow> <mi>d</mi> <mi>x</mi> </mrow> <mrow> <mi>d</mi> <mi>y</mi> </mrow> </mstyle> </math>
 
-
-initially suspected that the optical center of a glyph
+Kindersley initially suspected that the optical center of a glyph
 would be not on the axis through its center of mass, but through its
 third moment center.
 
 
 
-"Quite simply I mean that each letter should appear to be exactly in
-the centre between its two neighbours. To me this is the only
-criterion, and I do not believe that it requires any further
-justification. Put another way, any letter should occupy a passive
-position between its neighbours"
 
+Kindersley's observations
+-------------------------
 
 He noted that ascenders and descenders do not seem to contribute to the
 location of the optical center (i.e., h and n have the same center, as
