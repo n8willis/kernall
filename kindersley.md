@@ -96,9 +96,9 @@ measurements; computing the same quantities mathematically is
 simpler in this respect.
 
 Following the initial test runs, he adapted the mechanism to mask off
-a portion of each glyphs' center.  The masks were made of an opaque
-material perforated with holes in a gradient beginning at the center.
-
+a portion of each glyphs' center.  The masks (or "wedges") were made
+of an opaque material perforated with holes in a gradient beginning at
+the center. 
 
 This has the effect of applying a weight function in x to the area on
 each side of the dividing line.  Several gradient functions were
@@ -107,10 +107,15 @@ gradients were uniform in the y direction; Kindersley did speculate
 that using two-dimensional gradient shapes (parabolas,
 specifically), but it does not seem that he tested such gradients in practice.
 
-Importantly, multiplying the linear, quadratic, and cubic weight
+The rationale for the gradients described in the book is
+that the outer portions of the glyph "contributed" more than the interior.
+
+Importantly, though, multiplying the linear, quadratic, and cubic weight
 functions by the differential area inside the region measured gives
 the equivalent of the geometric mean, planar second moment, and the
-third moment.
+third moment.  So measuring the grayness of the sides of a glyph via
+photocell through the gradient masks is the equivalent of computing
+the "first," "second," and "third" moments directly.
 
 
 Kindersley's observations
