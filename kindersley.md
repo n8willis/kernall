@@ -66,24 +66,24 @@ The "area" axis seems to
 correspond to the x-axis location of the geometric median&mdash;the line
 that divides the glyph into two parts of equal area.
 
-[kindersley-area.png]
+(kindersley-area.png)
 
 The "first moment" seems to correspond to the geometric mean or
 centroid, which (for solids of uniform density) corresponds to the
 center of mass or center of gravity.  
 
-[kindersley-centroid.png]
+(kindersley-centroid.png)
 
 The "second moment" seems to correspond to the planar second moment of
 area with respect to the y axis.
 
-[kindersley-2ndmoment.png]
+(kindersley-2ndmoment.png)
 
 Following this progression, the "third moment" would be the
 integral of the differential area multiplied by the cube of the
 distance to the y-axis.
 
-[kindersley-3rdmoment.png]
+(kindersley-3rdmoment.png)
 
 
 Kindersley initially suspected that the optical center of a glyph
@@ -112,7 +112,7 @@ gradients were uniform in the y direction; Kindersley did speculate
 about using two-dimensional gradient shapes (parabolas,
 specifically), but it does not seem that he tested such gradients in practice.
 
-[kindersley-weight.png]
+(kindersley-weight.png)
 
 The rationale for the gradients described in the book is
 that the outer portions of the glyph "contributed" more than the interior.
@@ -140,7 +140,7 @@ practical solution.  One can compute the line integral of the
 Beziers that make up a glyph (or, for the purposes of the experiment,
 for each half of a glyph that is split vertically) and find the area.
 
-[kindersley-green-area.png]
+(kindersley-green-area.png)
 
 Moreover, Green's theorem allows one to compute the geometric mean,
 planar second moment, and even third moment in the same manner, so
@@ -148,10 +148,10 @@ the effects of applying the weight functions or gradient masks is
 easily computable as well.
 
 
-[kindersley-green-centroid.png]
-[kindersley-green-2ndmoment.png]
+(kindersley-green-centroid.png)
+(kindersley-green-2ndmoment.png)
 
-<!-- [kindersley-green-3rdmoment.png] -->
+<!-- (kindersley-green-3rdmoment.png) -->
 
 
 A software implementation of Kindersley's experiments could easily
