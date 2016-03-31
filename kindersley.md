@@ -149,6 +149,7 @@ easily computable as well.
 
 
 ![equation](kindersley-green-centroid.png)
+
 ![equation](kindersley-green-2ndmoment.png)
 
 <!-- (kindersley-green-3rdmoment.png) -->
