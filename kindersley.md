@@ -159,8 +159,18 @@ planar second moment, and even third moment in the same manner, so
 the effects of applying the weight functions or gradient masks is
 easily computable as well.
 
+The generic form of the relation:
+
+![equation](img/kindersley/kindersley-green-generic.png)
+
+holds for any choice of the functions *P* and *Q* that have continuous
+partial derivatives.  For the area calculation, one chooses `P = -y/2`
+and `Q = x/2`.  For the first moment, one could choose `P = -y^2/2` and `Q
+= 0`:
 
 ![equation](img/kindersley/kindersley-green-centroid.png)
+
+or, for the second moment, `P = -y^3/3` and `Q = 0`:
 
 ![equation](img/kindersley/kindersley-green-2ndmoment.png)
 
@@ -206,4 +216,40 @@ Second, he tested italic and slanted typefaces using the same method
 as uprights, and determined that the gradient mask needed to be tilted
 at the same angle as the italic in order to produce satisfactory
 results.
+
+
+Limitations
+-----------
+
+A fundamental limitation of the optical-centering work is that it
+produces only the "balance point" for each glyph.  Converting those
+points into a set of sidebearings requires adding space to both sides
+of the balance points.
+
+Kindersley asserted that each letter should be spaced by adding an
+equal amount to each side of the balance point, and that the correct
+amount for any given letter could be determined by placing it between
+a pair of already-spaced test strings: "O I" on the left, and "I O" on
+the right.
+
+Thus, spacing a typeface would involve first finding the optical
+centers for each glyph, then spacing "I" between a pair of "O"s and
+"O" between a pair of "I"s; then spacing the remaining letters
+individually.  For some glyphs, the minimum possible space is required
+on one side (namely, "L"), but Kindersley argued that, whatever
+initial set of sidebearings one finds, the sidebearings of the entire
+typeface can be incremented by the same amount, as desired.
+
+A number of sources report that Kindersley's approach produces its best results
+for text set in all capitals.  This is, perhaps, expected, since most
+of his research was conducted on all-capital Latin text (with an eye
+toward improving public signage).   It is possible that his results
+lean toward success with glyphs all of one height as a result.
+
+That observation does hold with Kindersley's
+note that his method did not respond to extenders, since only "Q"
+among the usual Roman capitals features an extender.  Whether or not
+two-dimensional masks would have impacted that finding remains an open
+question.  
+
 
