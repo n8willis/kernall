@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="765"
+   height="990"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="kindersley-masks.svg"
+   viewBox="0 0 765 990">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="344.6059"
+     inkscape:cy="612.40349"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1179"
+     inkscape:window-x="1920"
+     inkscape:window-y="21"
+     inkscape:window-maximized="1" />
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient8904">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop8906" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop8908" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8904"
+       id="linearGradient9048"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.50261778,0,0,1,350.3716,-1052.2899)"
+       x1="317.9476"
+       y1="1271.2118"
+       x2="405.17216"
+       y2="1271.2118" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8904"
+       id="linearGradient9050"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.50785338,0,0,1,132.93618,-4.9497475)"
+       x1="270.11478"
+       y1="1271.2118"
+       x2="405.17216"
+       y2="1271.2118" />
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-62.362183)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <g
+       style="stroke:#999999"
+       inkscape:label="MajorXGridlines"
+       id="g8676"
+       transform="matrix(5.4356436,0,0,5.4356436,82.24639,267.21782)" />
+    <g
+       style="stroke:#999999"
+       inkscape:label="MajorYGridlines"
+       id="g8678"
+       transform="matrix(5.4356436,0,0,5.4356436,82.24639,267.21782)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.75px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="195.43146"
+       y="298.31488"
+       id="text8890"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan8892"
+         x="195.43146"
+         y="298.31488"
+         style="font-size:292.5px">a</tspan></text>
+    <g
+       id="g8934"
+       transform="matrix(0.98969072,0,0,1,13.39129,-1047.2189)">
+      <rect
+         y="1181.7628"
+         x="270.1149"
+         height="168.99852"
+         width="68.589348"
+         id="rect8902"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:url(#linearGradient9050);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.43599987;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <use
+         height="100%"
+         width="100%"
+         transform="matrix(-1,0,0,1,540.22974,0)"
+         id="use8912"
+         xlink:href="#rect8902"
+         y="0"
+         x="0" />
+    </g>
+    <text
+       sodipodi:linespacing="125%"
+       id="text8944"
+       y="298.31488"
+       x="401.90665"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.75px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-size:292.5px"
+         y="298.31488"
+         x="401.90665"
+         id="tspan8946"
+         sodipodi:role="line">a</tspan></text>
+    <rect
+       y="134.42255"
+       x="486.13605"
+       height="168.99852"
+       width="67.88224"
+       id="rect8950"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:url(#linearGradient9048);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.43599987;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#rect8950"
+       id="use8992"
+       transform="matrix(-1,0,0,1,972.27216,0)"
+       width="100%"
+       height="100%" />
+  </g>
+</svg>
