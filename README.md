@@ -59,7 +59,7 @@ Kerning
 -------
 
 [Typefacet
-Autokern](http://charlesmchen.github.io/typefacet/topics/autokern/index.html)
+Autokern](typefacet.md)
 is a Python program by Charles M. Chen that can automatically adjust
 side-bearings 
 of kerning pairs in a font based on a set of user-supplied general arguments.
