@@ -49,29 +49,20 @@ AutoSpace by Andres Torresi of Huerta Tipográfica is an add-on for the
 Glyphs font editor.  It has been demonstrated in several widely
 shared online videos, but has not yet been formally released.
 
-[Spacing Macro](http://www.impallari.com/projects/overview/spacing-macro) by Pablo
-Impallari is a macro for FontLab.  It is based on discussions
-[http://typedrawers.com/discussion/52/spacing-macro] at the
-TypeDrawers forum, and was initially inspired by Frank E. Blokland's LetterModel.
+Pablo Impallari's [Spacing Macro](impallari.md) is a macro for FontLab.  It was initially inspired by Frank E. Blokland's LetterModel.
 
-[Kernagic](https://github.com/hodefoting/kernagic) by Øyvind Kolås is a
+[Kernagic](kernagic.md) by Øyvind Kolås is a
 standalone software tool that can automatically letterspace a UFO
-font.  It implements several different letterspacing approaches:
-* LetterModel by Frank E. Blokland
-* Snap Gap, which snaps "rhythm points" of glyphs to a desired grid
-* Interactivos Average, a simple approach expressed in
-https://gitorious.org/libregraphicsmag/interactivosbook .
-
-Note that the Average method was dropped from later Kernagic releases,
-as it did not produce results as satisfactory as the other methods.
-It is mentioned here for the sake of completeness.
+font.  It implements several different letterspacing approaches
 
 Kerning
 -------
 
 [Typefacet
 Autokern](http://charlesmchen.github.io/typefacet/topics/autokern/index.html)
-is a Python program using Robofab.
+is a Python program by Charles M. Chen that can automatically adjust
+side-bearings 
+of kerning pairs in a font based on a set of user-supplied general arguments.
 
 [BubbleKern](https://github.com/Tosche/BubbleKern) is an add-on for the
 Glyphs font editor.

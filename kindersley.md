@@ -137,6 +137,27 @@ photocell through the gradient masks is the equivalent of computing
 the "first," "second," and "third" moments directly.
 
 
+
+
+Kindersley's observations
+-------------------------
+
+Kindersley reported that using the quadratic gradient masks produced results
+"close" to what was expected.  He also made several other observations
+along the way.
+
+First, he noted that ascenders and descenders do not seem to contribute to the
+location of the optical center (i.e., h and n have the same center, as
+do v and y).  Instead, the optical centering happens within the
+x-height rectangle. 
+
+Second, he tested italic and slanted typefaces using the same method
+as uprights, and determined that the gradient mask needed to be tilted
+at the same angle as the italic in order to produce satisfactory
+results.
+
+
+
 Implementation talk
 -------------------
 
@@ -197,25 +218,6 @@ Kindersley's foray into optical spacing by these means seems to have
 come to a halt in the 1970s, at the dawn of the personal computing
 era.  More could surely be done with the computing resources available today.
 
-
-
-
-Kindersley's observations
--------------------------
-
-Kindersley reported that using the quadratic gradient masks produced results
-"close" to what was expected.  He also made several other observations
-along the way.
-
-First, he noted that ascenders and descenders do not seem to contribute to the
-location of the optical center (i.e., h and n have the same center, as
-do v and y).  Instead, the optical centering happens within the
-x-height rectangle. 
-
-Second, he tested italic and slanted typefaces using the same method
-as uprights, and determined that the gradient mask needed to be tilted
-at the same angle as the italic in order to produce satisfactory
-results.
 
 
 Limitations
