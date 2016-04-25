@@ -1,4 +1,4 @@
-kernall: Kerning and letterspacing research
+Kerning and letterspacing research
 ===========================================
 
 This repository hosts material that I am collecting about various

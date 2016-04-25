@@ -4,8 +4,7 @@ TypeFacet Autokern
 Charles M. Chen's [Autokern](http://charlesmchen.github.io/typefacet/topics/autokern/index.html) is a command-line Python tool released as
 part of Chen's *TypeFacet* software collection.  It reads in UFO font
 files and takes a set of user-supplied arguments, then outputs a
-modified UFO file with adjusted side-bearings and, optionally, kerning
-values.
+modified UFO file with kerning values and, optionally, adjusted side-bearings.
 
 Usage
 -----
@@ -24,7 +23,7 @@ step, one can inspect the output UFO file to note which glyph pairs
 may be problematic.
 
 Second, one runs Autokern again (on the same input UFO) to set the
-`min-distance-ems1` parameter to some non-zero value.  Selecting the
+`min-distance-ems` parameter to some non-zero value.  Selecting the
 appropriate value is up to the user based on trial runs and inspecting
 the results.  The parameter is meant to reflect the minimum spacing
 between two glyphs that come as close as possible to touching.  For
@@ -84,25 +83,36 @@ glyph: one pair by "inflating" each glyph a distance of
 
 The `min-distance` profiles are moved together until they touch, as are
 the `max-distance` profiles.  This determines the "minimum advance"
-and "maximum advance" for the kerning pair.
+and "maximum advance" values for the kerning pair.
 
 Next, the `max-distance` profiles are adjusted to determine the
-"intruding advance", which is distance adjustment that results in the
+"intruding advance", which is the distance adjustment that results in the
 most equally balanced "intrusion" amount for the two glyphs&mdash;that
-is, each glyph intrudes by a close-to-equal amount, within the
-intrusion tolerance parameter.  The intrusion advance is found by
-binary search on the interval [0, int(ceiling(2.0 * max(pair_intrusion_tolerance, pair_max_distance)))].
+is, each glyph intrudes by a close-to-equal amount, without exceeding the
+intrusion tolerance parameter.
+
+The intruding advance is found via 
+binary search on the interval [0, int(ceiling(2.0 *
+max(pair_intrusion_tolerance, pair_max_distance)))].  At each step,
+the algorithm takes the horizontal distance between the facade profiles at
+several y-axis values, looking for collisions between the profiles.
+If a collision is detected, the next iteration moves to the "far" side
+of the remaining search interval.
 
 The final kern is determined by summing the intruding advance (or the
-minimum advance parameter, if it is greater than the intruding
-advance), any pair-tracking value provided, the
+"minimum advance" value, if that is greater than the intruding
+advance), any `tracking-ems` value provided as a parameter, the
 `x-extrema-overlap-scaling` parameter, and the greater of the
-`x-extrema-overlap` or `max-x-extrema-overlap` parameters.
+`x-extrema-overlap` and `max-x-extrema-overlap` parameters.
 
 The facade profiles used in the collision-detection and intrusion
 steps are of reduced precision (in comparion to the font's internal
 point system); the precision used is derived from the `precision-ems`
 parameter. 
+
+The algorithm can also be tweaked with the
+`ignore-x-extrema-overlap-outside-ascender` parameter, which
+limits the spacing-adjustment process to measurements within the x-height.
 
 Analysis
 --------
@@ -110,3 +120,50 @@ Analysis
 Bluntly speaking, Autokern makes "common sense" kerning calculations
 based on what it assumes to be a properly letterspaced input font.
 Which is to say that it attempts to make unobtrusive changes.
+
+As far as the critical "intruding advance" step is concerned, the
+algorithm measures the horizontal distance between the two glyphs at a
+number of y-axis sample heights, but the samples also take three
+specific conditions into account:
+
+- Large contiguous gaps at the top of bottom are discarded; this
+  removes the effect (for example) of the left ascender in the pair
+  "hh".
+
+- Large gaps in the middle of the height samples are de-emphasized by
+  replacing them with the maximum protrusion value.  This removes
+  undue impact from the open bowl in "c".
+
+- Sample rows that exist solely because of the glyph-inflation process
+  are discarded.  This essentially chops the profiles off at the
+  original glyph's vertical extrema.
+
+Together with the `pair-intrusion-tolerance` parameter, these conditions
+restrict the intrusion-advance search to commonly accepted rules about
+Latin typefaces.  That said, more specific rules might produce more
+pleasing results.  As implemented, the rules are somewhat ad-hoc.  The
+amount of "large contiguous gap" that triggers the "hh condition is
+hard-coded to `pair_max_distance` * 0.5.  Depending on the typeface,
+that might trigger false positives for (say) "L" or"T".
+
+Several of the other conditions in the intruding-advance step are
+similarly hard-coded.  It is an open question whether these metrics
+produce the best results.
+
+At a higher level, the glyph-inflation process used to create the
+facade profiles might bear closer examination as well.  It "inflates"
+glyphs by a fixed amount, both horizontally and vertically, in an
+attempt to define a "bubble" into which adjacent glyphs should not
+intrude.  But the fixed-radius inflation may not correspond well to
+how glyphs (particularly those with dense or complex contours) behave.
+
+Finally, the usage of the Autokern tool itself requires the user to
+employ multiple, manual steps.  Much of the functionality could be
+broken out into a reusable library to automate some of the
+parameter-determining stages or to work interactively.
+
+The manual determination of the parameters (particularly
+`max-x-extrema-overlap-ems` and `intrusion-tolerance-ems`) is a
+crucial input to the final results.  In a sense, since these
+parameters are not automatically determined for a given input
+typeface, the final output can only be considered partially automated.
